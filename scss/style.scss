@@ -1,0 +1,110 @@
+// Vars
+
+$backgroundColor: #202020;
+$textColor: white;
+$linkColor: #5b77d4;
+
+$videoPanelWidth: 900px;
+$videoPanelPadding: 20px;
+
+$videoMarginBottom: 20px;
+
+// Reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Tipografia
+
+body {
+  font-family: sans-serif;
+  background: $backgroundColor;
+  color: $textColor;
+}
+
+// Cores
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+  &:hover, &:active, &:visited {
+    color: inherit;
+  }
+}
+
+// Layout: Video panel
+
+.video-panel {
+  width: $videoPanelWidth;
+  padding: $videoPanelPadding;
+}
+
+.video {
+  margin-bottom: $videoMarginBottom;
+}
+
+// Componentes ====================================
+
+// Vídeo  
+
+.video {
+  display: flex;
+  border: 2px solid white;
+
+  > .preview-side {
+    padding: 10px;
+  }
+
+  .data > * {
+    margin-right: 20px;
+  }
+
+  > .details {
+
+    > * {
+      padding: 10px;
+    }
+
+  }
+}
+
+/*
+Estilização de exemplo. Pode-se ver como referenciar cada elemento do componente
+*/
+
+.video.example {
+  border: 8px solid yellow;
+
+  > .preview-side {
+    border: 4px solid blue;
+  }
+
+  > .details {
+    border: 4px solid blue;
+
+    > .title {
+      border: 4px solid lime;
+    }
+
+    > .description {
+      border: 4px solid lime;
+    }
+
+    > .data {
+      border: 4px solid lime;
+
+      > .author {
+        border: 4px solid cyan;
+      }
+      > .views {
+        border: 4px solid cyan;
+      }
+      > .time-ago {
+        border: 4px solid cyan;
+      }
+    }
+  }
+}

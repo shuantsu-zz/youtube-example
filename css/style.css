@@ -1,0 +1,76 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #202020;
+  color: white;
+}
+
+a {
+  color: #5b77d4;
+  text-decoration: none;
+}
+a:hover, a:active, a:visited {
+  color: inherit;
+}
+
+.video-panel {
+  width: 900px;
+  padding: 20px;
+}
+
+.video {
+  margin-bottom: 20px;
+}
+
+.video {
+  display: flex;
+  border: 2px solid white;
+}
+.video > .preview-side {
+  padding: 10px;
+}
+.video .data > * {
+  margin-right: 20px;
+}
+.video > .details > * {
+  padding: 10px;
+}
+
+/*
+Estilização de exemplo. Pode-se ver como referenciar cada elemento do componente
+*/
+.video.example {
+  border: 8px solid yellow;
+}
+.video.example > .preview-side {
+  border: 4px solid blue;
+}
+.video.example > .details {
+  border: 4px solid blue;
+}
+.video.example > .details > .title {
+  border: 4px solid lime;
+}
+.video.example > .details > .description {
+  border: 4px solid lime;
+}
+.video.example > .details > .data {
+  border: 4px solid lime;
+}
+.video.example > .details > .data > .author {
+  border: 4px solid cyan;
+}
+.video.example > .details > .data > .views {
+  border: 4px solid cyan;
+}
+.video.example > .details > .data > .time-ago {
+  border: 4px solid cyan;
+}
+
+/*# sourceMappingURL=style.css.map */
