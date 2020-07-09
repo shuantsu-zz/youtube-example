@@ -35,7 +35,7 @@ a:hover, a:active, a:visited {
 .video > .preview-side {
   padding: 10px;
 }
-.video .data > * {
+.video > .details > .data > * {
   margin-right: 20px;
 }
 .video > .details > * {

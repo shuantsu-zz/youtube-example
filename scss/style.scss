@@ -58,11 +58,13 @@ a {
     padding: 10px;
   }
 
-  .data > * {
-    margin-right: 20px;
-  }
-
   > .details {
+
+    > .data {
+      > * {
+        margin-right: 20px;
+      }
+    }
 
     > * {
       padding: 10px;
